@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Warframe Wiki Redirect",
+    "version": "1.0",
+  
+    "description": "Redirects all warframe.fandom.com URLs to wiki.warframe.com",
+  
+    "icons": {
+      "48": "icons/border-48.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://warframe.fandom.com/*"],
+        "js": ["redirect.js"]
+      }
+    ]
+  }
+  
